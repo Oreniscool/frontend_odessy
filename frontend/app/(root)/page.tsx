@@ -1,9 +1,13 @@
-import Image from "next/image";
-
-export default function Home() {
+import { signIn } from "@/auth";
+export default function LandingPage() {
   return (
-    <>
-      <div>hi</div>
-    </>
+    <form
+      action={async () => {
+        "use server";
+        await signIn("github", { redirectTo: "/dashboard" });
+      }}
+    >
+      <button type="submit">Login</button>
+    </form>
   );
 }
