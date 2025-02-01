@@ -9,6 +9,7 @@ import {
   Calendar,
   Users2,
   Settings,
+  Brain,
 } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -35,14 +36,11 @@ export default function Sidebar() {
   return (
     <div className="fixed inset-y-0 left-0 z-50 w-72 transform transition-transform duration-200 ease-in-out">
       <div className="flex h-full flex-col gap-y-5 overflow-y-auto bg-[#1C1D2C] px-6 pb-4 shadow-xl ring-1 ring-white/10">
-        <div className="flex h-16 shrink-0 items-center">
-          <Image
-            className="h-8 w-auto"
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Template-gfSerHeXl2C6G7s6Y34JxU0SojHetN.png"
-            alt="HealthTrack"
-            width={6}
-            height={6}
-          />
+        <div className="flex h-16 shrink-0 items-center gap-5">
+          <Brain className="h-10 w-10 text-[#e2ff81]" />
+          <h1 className="text-white text-2xl text-[#e2ff81] font-semibold">
+            APEX HEALTH
+          </h1>
         </div>
         <nav className="flex flex-1 flex-col">
           <ul role="list" className="flex flex-1 flex-col gap-y-7">
