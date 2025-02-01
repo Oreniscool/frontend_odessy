@@ -1,4 +1,4 @@
-import { auth, signOut, signIn } from "@/auth";
+import { auth } from "@/auth";
 import LoggedInDashboard from "@/components/LoggedInDashboard";
 
 export default async function Dashboard() {

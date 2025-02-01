@@ -3,7 +3,6 @@
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
 import {
   Brain,
