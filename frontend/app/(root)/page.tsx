@@ -281,51 +281,6 @@ export default function Page() {
             </div>
           </section>
 
-          {/* Interactive Demo Section */}
-          <section className="container mx-auto px-4 py-20">
-            <div className="relative rounded-2xl overflow-hidden bg-gradient-to-r from-teal-900/50 to-blue-900/50 backdrop-blur-xl p-8">
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 5.4 }}
-                className="grid md:grid-cols-2 gap-12 items-center"
-              >
-                <div className="space-y-6">
-                  <h2 className="text-3xl font-bold text-white">
-                    See It In Action
-                  </h2>
-                  <p className="text-white/80">
-                    Experience how Apex Health transforms your healthcare
-                    practice with our interactive demo.
-                  </p>
-                  <Button className="bg-[#e2ff81] text-black hover:bg-[#d4ff60]">
-                    Watch Demo
-                  </Button>
-                </div>
-                <div className="relative h-[300px] rounded-lg overflow-hidden">
-                  <motion.div
-                    animate={{
-                      scale: [1, 1.02, 1],
-                      rotate: [0, 1, 0],
-                    }}
-                    transition={{
-                      duration: 4,
-                      repeat: Number.POSITIVE_INFINITY,
-                      ease: "easeInOut",
-                    }}
-                    className="absolute inset-0 bg-gradient-to-r from-teal-500/20 via-blue-500/20 to-purple-500/20"
-                  />
-                  <Image
-                    src="/placeholder.svg"
-                    alt="Demo Preview"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </motion.div>
-            </div>
-          </section>
-
           {/* Testimonials */}
           <section className="container mx-auto px-4 py-20">
             <motion.div
