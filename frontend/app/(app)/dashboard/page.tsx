@@ -9,7 +9,7 @@ export default async function Dashboard() {
       {session && session?.user ? (
         <LoggedInDashboard session={session}></LoggedInDashboard>
       ) : (
-        <div>logged out</div>
+        <div>log out</div>
       )}
     </div>
   );
